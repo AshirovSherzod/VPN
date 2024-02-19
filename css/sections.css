@@ -1,0 +1,77 @@
+#hero .container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero__left h1 {
+    font-family: "Rubik";
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.hero__left h1 span {
+    font-weight: 700;
+}
+
+.hero__left p {
+    color: var(--paragraph-color);
+    font-family: "Rubik";
+    font-weight: 400;
+}
+
+.hero__btn {
+    padding: 15px 60px;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.hero__btn:hover {
+    color: var(--white-text-color);
+    background-color: var(--primary-color);
+}
+
+.hero__right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1275px) {
+    .hero__left h1 {
+        font-size: 38px;
+    }
+
+    .hero__left p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1135px) {
+    .hero__left h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero__left h1 {
+        font-size: 38px;
+    }
+
+    #hero .container {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+
+    }
+}
